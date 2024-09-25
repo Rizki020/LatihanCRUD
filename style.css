@@ -1,0 +1,171 @@
+/* Gaya dasar untuk body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+
+/* Gaya untuk heading */
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+    font-size: 2rem;
+}
+
+/* Gaya untuk container tabel */
+.table-container {
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1200px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    overflow-x: auto; /* Tambahkan scroll horizontal jika tabel terlalu besar */
+}
+
+/* Gaya tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+/* Border dan padding untuk tabel */
+table, th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+/* Gaya header tabel */
+th {
+    background-color: #333;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Gaya baris tabel */
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Gaya gambar di tabel */
+image {
+    width: 100px;
+    height: auto;
+    border-radius: 5px;
+}
+/* Warna untuk ikon edit */
+a[title="Edit"] i {
+    color: rgb(38, 96, 131); /* Warna hijau untuk edit */
+}
+
+/* Warna untuk ikon delete */
+a[title="Delete"] i {
+    color: red; /* Warna merah untuk delete */
+}
+
+/* Menambahkan efek hover */
+a[title="Edit"]:hover i {
+    color: blue; /* Warna lebih gelap saat di-hover */
+}
+
+a[title="Delete"]:hover i {
+    color: darkred; /* Warna lebih gelap saat di-hover */
+}
+
+
+/* Tombol Aksi */
+.button {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    display: inline-flex; 
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    width: auto; /* Biarkan lebar mengikuti isinya */
+    max-width: 300px; /* Batasi lebar maksimal agar tidak terlalu besar */
+}
+
+/* Hover untuk tombol */
+.button:hover {
+    background-color: darkgreen;
+}
+
+/* Gaya untuk form */
+form {
+    margin: 20px auto;
+    width: 90%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Input dan textarea */
+input[type="text"], input[type="number"], textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #fafafa;
+    box-sizing: border-box;
+    transition: border 0.3s ease;
+}
+
+/* Fokus pada input */
+input[type="text"]:focus, input[type="number"]:focus, textarea:focus {
+    border: 1px solid #333;
+    outline: none;
+}
+
+/* Tombol submit */
+input[type="submit"] {
+    background-color: blue;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover pada tombol submit */
+input[type="submit"]:hover {
+    background-color: darkblue;
+}
+
+/* Responsivitas untuk perangkat mobile */
+@media (max-width: 768px) {
+    .table-container, form {
+        width: 90%;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+
+    .button {
+        width: auto; /* Agar tombol memenuhi lebar kontainer pada perangkat kecil */
+        max-width: 100%;
+        text-align: center;
+        margin: auto;
+    }
+}
